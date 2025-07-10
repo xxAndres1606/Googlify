@@ -1,0 +1,93 @@
+/* This pieces of code is to reference and style the basic Google search and the Google image search*/
+
+body {
+    font-family: Arial, sans-serif; /* The chosen font is Arial, in case it doesnt support Arial, the next one is sans-serif*/
+    height: 100vh; /* Using this says, make this element's height be equal to the 100% of the viewport height. In other words without this: Your <body> only takes up as much height as its content needs. With it: Your <body> stretches to fill the entire screen height.*/
+    margin: 0;
+    display: flex; /* Using this, the body now becomes a flex container and its children become flex items. flex items can shrink if theres not enough space, grow to fill extra space, be laid out in a row or column, and be easily centered horizontally or vertically.*/
+    flex-direction: column; /* Tells the flexbox to stack items vertically.*/
+    justify-content: center; /* Vertically centers all flex items within the page height.*/
+    align-items: center; /* Horizontally centers all flex items inside the page.*/
+
+}
+input[type = "text"] { /* input[type = text] is referring to the search bar, notice that the input is inside the body, however, we are choosing the the input tag with type text*/
+    width: 500px;
+    height: 40px;
+    border-radius: 24px; /* The border-radius makes the search-bar have rounded edges, just like in google*/
+    border: 1px solid #dcdcdc; /* This border styling gives the border a size of 1px, a solid border and the hashtag is for a hexadecimal color in CSS*/
+    padding: 0 15px; /* Padding adds space inside an element between its content and its border, the 0 is for the top/bottom and the 15px is for the left/right padding*/
+}
+input[type = "submit"] {
+    margin: 20px 5px; /* Margin creates space outside an element, pushing it away from other elements. The 20px is for top/bottom and the 5px is for left/right*/
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Giving a background color to the submit buttons*/
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer; /* setting the cursor to be a pointer changes the mouse cursor shape to a pointing hand when you hover over an element.*/
+}
+.links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.links a { /* Saying a after.links is for styling the actual links not just the container where the div is, we are specifically targetting the a tags.*/
+    margin-left: 10px; /* Adds 10 pixels of space to the left of each link.*/
+    text-decoration: none; /* Removes the underline that links have by default in HTML.*/
+    color: #1a0dab; /* Gives the links color dark blue specifically.*/
+    font-size: 14px;
+}
+.links a:hover { /* This target the same links but only when you hover over them.*/
+    text-decoration: underline;
+}
+.button-group {
+    margin-top: 20px; /* margin-top puts 20px of space between the search bar and the google buttons.*/
+    display: flex;
+    justify-content: center; /* centers the items from left to right by default, unless flex-direction is set to column.*/
+    gap: 10px; /* Puts spacing between the google buttons.*/
+}
+form {
+    display: flex;
+    flex-direction: column; /* Stack your stuff vertically.*/
+    align-items: center; /* Center them from left to right. */
+}
+
+/* The next pieces of code is to reference and style the Google Advanced Search*/
+
+.advanced-container { /* Using .advanced container is for the CSS class selector for the class "advanced-container"*/
+    max-width: 600px; /* It limits how much the advanced container div can stretch*/
+    margin: 80px auto; /* This shorthand sets top/bottom margins and left/right margins in one go.*/
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.form-group {
+    display: flex; /* flexbox*/
+    flex-direction: column; /* stacks children vertically as opposed to the default (horizontally)*/
+    margin-bottom: 15px; /* adds 15px of space below each div in the .form-group class*/
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Aligns the label’s text to the left of its container.*/
+}
+.form-group input[type = "text"] {
+    height: 35px; /* Sets the height of the text input field*/
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px; /* Adds space inside the input box 5px top/bottom, 10px left/right*/
+    font-size: 16px;
+}
+.advanced-button {
+    background-color: #4d90fe;
+    color: white; /* The color of the letters of the advanced button*/
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.advanced-button:hover {
+    background-color: #357ae8;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Image Search</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class = "links">
+        <a href = "index.html">Google Search</a> <!-- We want to link this webpage back to the original google search webpage we previously built-->
+    </div>
+    <div>
+        <form action = "https://www.google.com/search">
+            <input type = "hidden" name = "tbm" value = "isch"> <!-- Tells google we want an image search instead of a normal web search-->
+            <input type = "text" class = "search-bar" name = "q" placeholder = "Search Images...">
+            <div class = "button-group">
+                <input type = "submit" value = "Search Images">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

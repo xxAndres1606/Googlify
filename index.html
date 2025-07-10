@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <div class = "links">
+            <a href = "images.html">Image Search</a>
+            <a href = "advanced.html">Advanced Search</a>
+        </div>
+        <div>
+            <form action = "https://google.com/search"> <!-- This form tag takes us to the google search after we submit our search.-->
+                <input type = "text" name = "q" class = "search-bar" placeholder = "Search Google..."> <!-- The placeholder are the letters that appear before you start typing on the search bar; by adding an input field to the form whose name attribute was q, whatever the user types into that input field is included as a GET parameter in the URL.-->
+                <div class = "button-group">
+                    <input type = "submit" value = "Google Search"> <!--The type is submit; it creates a button to submit the search, the value is the name that button is going to have.-->
+                    <input type = "submit" name = "btnI" value = "I'm feeling lucky"> <!-- setting the name btnI triggers the I'm feeling lucky Google feature; the name attribute identifies the key that gets sent in the URL query parameters when the form is submitted. When you click a submit button in a form, only the clicked button’s name=value pair gets sent along with the other inputs.-->
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
